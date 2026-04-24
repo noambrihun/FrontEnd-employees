@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Sidebar() {
     return (
-      <div className="w-64 bg-gray-900 text-white p-6">
+      <aside className="w-64 shrink-0 bg-gray-900 p-6 text-white min-h-screen">
         <h1 className="text-2xl font-bold mb-8">
           Employee Manager
         </h1>
@@ -22,7 +22,7 @@ function Sidebar() {
                 </Link>
             </li>
         </ul>
-      </div>
+      </aside>
     );
   }
   

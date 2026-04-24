@@ -7,16 +7,16 @@ import AddEmployeePage from "./pages/AddEmployeePage";
 
 function App() {
   return (
-    <div className="flex min-h-screen bg-gray-100">
+    <div className="flex min-h-screen w-full bg-gray-100">
       <Sidebar />
 
-      <div className="flex-1 p-8">
+      <main className="flex-1 overflow-x-hidden p-8">
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/employees" element={<EmployeesPage />} />
           <Route path="/add" element={<AddEmployeePage />} />
         </Routes>
-      </div>
+      </main>
     </div>
   );
 }
